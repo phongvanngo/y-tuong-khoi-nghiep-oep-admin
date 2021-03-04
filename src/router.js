@@ -11,7 +11,8 @@ const SignIn = lazy(() => import('./features/signIn/View/SignIn'));
 const Dashboard = lazy(() => import('./Container/Dashboard/Dashboard'))
 
 function PrivateRoute({ children, ...rest }) {
-    const { isLogin } = useSelector(state => state.signIn);
+    // const { isLogin } = useSelector(state => state.signIn);
+    const isLogin = true;
     return (
         <Route
             {...rest}
